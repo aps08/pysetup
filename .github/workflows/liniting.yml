@@ -1,6 +1,11 @@
 name: pywisher
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'src/*.py'
 
 jobs:
   build:
